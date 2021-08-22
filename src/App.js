@@ -1,4 +1,8 @@
 
+import Slide1 from './img/slide/1.jpg';
+import Slide2 from './img/slide/2.jpg';
+import Slide3 from './img/slide/3.jpg';
+import Slide4 from './img/slide/4.jpg';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -30,7 +34,7 @@ function App() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
+      src={Slide1}
       alt="First slide"
     />
     <Carousel.Caption>
@@ -41,7 +45,7 @@ function App() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="img/slide/1.jpg"
+      src={Slide2}
       alt="Second slide"
     />
 
@@ -53,7 +57,7 @@ function App() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src={Slide3}
       alt="Third slide"
     />
 
@@ -62,6 +66,18 @@ function App() {
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={Slide4}
+            alt="Fourth slide"
+          />
+
+          <Carousel.Caption>
+            <h3>Fourth slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
 </Carousel>
 </>
   );
