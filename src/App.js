@@ -3,12 +3,14 @@ import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import Carousel from 'react-bootstrap/Carousel';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './altro.css';
 function App() {
   return (
+    <>
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Itlas</Navbar.Brand>
@@ -39,7 +41,7 @@ function App() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src="img/slide/1.jpg"
       alt="Second slide"
     />
 
@@ -61,6 +63,7 @@ function App() {
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
+</>
   );
 }
 
