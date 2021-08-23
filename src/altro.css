@@ -1,6 +1,107 @@
-.luigi{
-    background-color: hotpink;
+.carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
 }
-.App-header{
-    background-color: indigo;
+
+.carousel-item img {
+    max-height: 900px;
+}
+
+.carousel-caption {
+    /* position: relative;*/
+    height: 60%;
+}
+
+.brightness {
+    filter: brightness(70%);
+    height: 900px;
+    object-fit: cover;
+}
+
+.button {
+    background-color: #fff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.verde {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 50px;
+    cursor: pointer;
+}
+
+.dash-before::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    margin-left: -50px;
+    margin-top: 25px;
+    width: 40px;
+    height: 1px;
+    background-color: #24ce5c;
+}
+
+.frase {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.scopri {
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+.scopri:hover {
+    color: #4CAF50;
+}
+
+.icona {
+    transition: all .35s;
+    float: left;
+    fill: #4CAF50;
+}
+
+a:hover+.icona {
+    padding-left: 10px;
+}
+
+.post {
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+.verticalCentre {
+  display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
+
+@media (max-width:767px) {
+    .dash-before::before {
+        display: none!important
+    }
 }
